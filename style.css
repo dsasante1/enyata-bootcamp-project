@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-#websiteTitle{
+.websiteTitle{
     display: flex;
     flex-flow: row;
     align-items: center;
@@ -12,7 +12,7 @@
     background-color: rgb(239, 96, 71);  
 }
 
-#titleText{
+.titleText{
     color:white;
     font-size: xx-large;
     padding: 8px;
@@ -33,4 +33,20 @@
 #banner{
     width: 450px;
     
+}
+
+.welcomeBanner{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content:center; 
+    background-color: rgb(238, 80, 52);  
+}
+
+#welcome{
+    font-size: large;
+}
+
+#gameloft{
+    font-size: x-large;
 }
