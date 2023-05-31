@@ -70,6 +70,8 @@ body{
     background-color:#f4f4f4;
 }
 
+/* hyperlinks */
+
 a:link{
     text-decoration: none;
     color:black;
@@ -111,7 +113,7 @@ article p {
 
   article h1{
     text-align: center;
-    color: red;
+    color:#f63232;
     font-size: xxx-large;
 
   }
@@ -129,16 +131,24 @@ article p {
 }
 
 
+/* set posters properties */
 ul li img{
     width: 270px;
 }
+
+
+/* remove period in ul li*/
+ul li{
+    list-style-type: none
+}
+
 
 
 /* contact section */
 
 section{
     background-color: rgb(238, 238, 238);
-    padding: 70px;
+    padding: 50px;
     text-align: center;
 
 }
@@ -148,10 +158,12 @@ section h1{
     padding-bottom: 15px;
 }
 
+
 section form input {
-    margin: 10px 0;
-    padding: 10px 20px;
-    font-size: 16px;
+
+    margin: 10px 15px;
+    padding: 10px 20px; 
+    font-size: 16px; 
     border: 4px solid white;
     border-radius: 28px;
   }
@@ -163,9 +175,9 @@ section form button {
   
     background-color: #f63232;
     border: none;
-    border-radius: 50px;
-    padding: 20px;
-    width: 50%;
+    border-radius: 28px;
+    padding: 20px 40px;
+    margin: 20px;
     color: #f4f4f4;
     font-size: 20px;
     cursor: pointer;
@@ -185,13 +197,25 @@ footer h3{
        color: white;
 }
 
+    /* TODO */
 
  /* welcome moves and cover the banner */
+
  /* navbar turns into a row */
+
  /* nav bar becomes fixed and persitent when scrolled */
+
  /* released posters turns into a row*/
 
  /* responsiveness (500 px and up) */
+
+/* font size release notes */
+
+ /* hoover nav links */
+
+ /* color of signup */
+
+
  @media only screen and (min-width: 500px) {
     *{
         margin: 0px;
@@ -200,7 +224,7 @@ footer h3{
 
     .websiteTitle{
         position:sticky;
-        z-index: auto;
+        z-index: 1;
         top: 0px;
     }
 
@@ -272,9 +296,25 @@ footer h3{
     }
 
     .pageNav{
-        top:10%;
+        top:9%;
     
     }
+
+    ul li img{
+        margin: 10px;
+        width: 200px;
+        /* text-align: center; */
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    
  }
  
 
