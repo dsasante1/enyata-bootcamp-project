@@ -170,7 +170,7 @@ section h1{
 section form input {
 
     margin: 10px 15px;
-    padding: 10px 20px; 
+    padding: 10px 25px; 
     font-size: 16px; 
     border: 4px solid white;
     border-radius: 28px;
@@ -205,24 +205,9 @@ footer h3{
        color: white;
 }
 
-    /* TODO */
 
- /* welcome moves and cover the banner */
-
- /* navbar turns into a row */
-
- /* nav bar becomes fixed and persitent when scrolled */
-
- /* released posters turns into a row*/
-
- /* responsiveness (500 px and up) */
-
-/* font size release notes */
-
- /* hoover nav links */
-
- /* color of signup */
-
+/* set entire body to z index minus title 
+and nav  */
 
  .releaseText, article,ul, section, footer{
     z-index: -1;
@@ -257,7 +242,7 @@ footer h3{
 }
 
 .welcomeBanner .textTitle span{
-    font-size: xx-large;
+    font: size 20px;
 }
 
 .pageNav{
@@ -344,14 +329,14 @@ footer h3{
         height: 170px;
         position:absolute;
         left: 0px;
-        top: 30%;
+        top: 20%;
         z-index: auto;
         
     }
 
     .pageNav{
         position: sticky;
-        top:20%;
+        top:40%;
     
     }
 
@@ -370,9 +355,13 @@ footer h3{
         height: 170px;
         position:absolute;
         left: 0px;
-        top: 30%;
+        top: 40%;
         z-index: auto;
         
+    }
+
+    .welcome.textTitle span{
+        font-size: 40px;
     }
 
     .pageNav{
@@ -385,7 +374,10 @@ footer h3{
 
  } 
 
-
+#warning{
+    color:#f63232;
+    display: none;
+}
 
 
 
