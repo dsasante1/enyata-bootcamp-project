@@ -70,7 +70,15 @@ body{
     background-color:#f4f4f4;
 }
 
+.pageNav span #signup{
+    color:#f63232;
+
+}
+
+
+
 /* hyperlinks */
+
 
 a:link{
     text-decoration: none;
@@ -302,7 +310,7 @@ footer h3{
 
     .pageNav{
         position: sticky;
-        top:10%;
+        top:9%;
     
     }
 
