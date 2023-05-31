@@ -18,6 +18,7 @@ body{
     background-color: #f63232;  
 }
 
+/* gameloft css properties*/
 .titleText{
     color:white;
     font-size: xx-large;
@@ -27,6 +28,8 @@ body{
    
 }
 
+/* border around gamloft */
+
 #border{
     margin: 20px;
     border: solid white;
@@ -35,10 +38,17 @@ body{
 
 }
 
+
+
+
+/* size of banner picture*/
 #banner{
-    width: 450px;
-    
+    width: 100%;
+    height: auto;
+    z-index: auto;
 }
+
+
 
 .welcomeBanner{
     display: flex;
@@ -109,7 +119,7 @@ article p {
   }
 
 .releasePosters{
-  text-align: center;;
+  text-align: center;
 }
 
 
@@ -165,42 +175,54 @@ footer h3{
        color: white;
 }
 
+
  /* welcome moves and cover the banner */
  /* navbar turns into a row */
  /* nav bar becomes fixed and persitent when scrolled */
  /* released posters turns into a row*/
 
- /* responsiveness (800 px and up) */
- @media only screen and (min-width: 800px) {
+ /* responsiveness (500 px and up) */
+ @media only screen and (min-width: 500px) {
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+ 
+
+   .welcomeBanner{
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center; 
+    background-color: #f63232;
+    width: 200px;  
+    height: 200px;
+    position:relative;
+    z-index: 1;
     
-    .innerBox{
-        display: flex;
-        flex-direction: row;
-        /* flex-wrap:wrap; */
-        height: 110;
+}
 
-        
-    }
+#welcome{
+    font-size: x-large;
+}
 
-    span{
-        font-size: small;
-    }
+#gameloft{
+    font-size: xx-large;
+}
 
-    #touristSite{
-        font-size: small;
+.pageNav{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    background-color: #f63232; 
+    padding: 20px;
+    background-color:#f4f4f4;
+    position: sticky;
 
-    }
+}
 
-    #date{
-        font-size: x-small;
-    }
 
-    #locationIcon{
-        display: inline-block;
-        margin-right: 6px;
-        height: 13px;
-        width: 9px;
-    }
  }
  
 
@@ -210,36 +232,7 @@ footer h3{
  
  @media only screen and (min-width: 700px) {
     
-    .innerBox{
-        display: flex;
-        flex-direction: row;
-        /* flex-wrap:wrap; */
-        height: 150;
-
-        
-    }
-
-    span{
-        font-size: large;
-    }
-
-    #touristSite{
-        font-size: large;
-
-    }
-
-    #date{
-        font-size: small;
-    }
-
-    #locationIcon{
-        display: inline-block;
-        margin-right: 6px;
-        height: 16px;
-        width: 12px;
-    }
-
-
+  
  }
  
 
@@ -250,39 +243,10 @@ footer h3{
  
  @media only screen and (min-width: 992px) {
     
-    .innerBox{
-        display: flex;
-        flex-direction: row;
-        /* flex-wrap:wrap; */
-        height: 250;
-
-        
-    }
-
-    span{
-        font-size: larger;
-    }
-    
-    #touristSite{
-        font-size: larger;
-
-    }
-
-    #date{
-        font-size: large;
-    }
-
-    #locationIcon{
-        display: inline-block;
-        margin-right: 6px;
-        height: 17px;
-        width: 14px;
-    }
+   
 
  }
  
-
-
 
 
  
@@ -291,34 +255,7 @@ footer h3{
 
  @media only screen and (min-width: 1200px) {
 
-    .innerBox{
-        display: flex;
-        flex-direction: row;
-        /* flex-wrap:wrap; */
-        height: 300px;
-
-        
-    }
-
-    span{
-        font-size: x-large;
-    }
-
-    #touristSite{
-        font-size: x-large;
-
-    }
-
-    #date{
-        font-size: large;
-    }
-
-    #locationIcon{
-        display: inline-block;
-        margin-right: 6px;
-        height: 22px;
-        width: 16px;
-    }
+   
 
  } 
 
