@@ -50,3 +50,81 @@
 #gameloft{
     font-size: x-large;
 }
+
+.pageNav{
+    display: flex;
+    flex-flow: column;
+    /* align-items: center;
+    justify-content:center;  */
+    background-color: rgb(239, 96, 71); 
+    padding: 20px;
+    background-color: gainsboro;
+}
+
+a:link{
+    text-decoration: none;
+    color:black;
+    font-family: 'Poppins', sans-serif;
+}
+
+a:visited{
+    color: red;
+    text-decoration: none;
+   
+    font-family: 'Poppins', sans-serif;
+}
+
+
+a:active{
+    color: red;
+    text-decoration: none;
+    
+    font-family: 'Poppins', sans-serif;
+}
+
+.releaseText{
+    /* display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content:center;  */
+    
+    padding: 20px;
+
+    
+}
+
+
+article p::first-line {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+article p {
+    line-height: 25px;
+    text-align: center;
+    width: 60%;
+    margin: 20px auto 0;
+  }
+
+
+  article h1{
+    text-align: center;
+    color: red;
+    font-size: xxx-large;
+
+  }
+
+.releasePosters{
+  text-align: center;;
+}
+
+
+ul li img{
+    width: 200px;
+}
+
+contact{
+    padding: 20px;
+    background-color: gainsboro;
+    
+}
