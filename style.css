@@ -4,12 +4,18 @@
     box-sizing: border-box;
 }
 
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
 .websiteTitle{
     display: flex;
     flex-flow: row;
     align-items: center;
     justify-content:center; 
-    background-color: rgb(239, 96, 71);  
+    background-color: #f63232;  
 }
 
 .titleText{
@@ -17,8 +23,7 @@
     font-size: xx-large;
     padding: 8px;
     font-weight: bolder;
-    font-family: 'Poppins', sans-serif;
-    
+ 
    
 }
 
@@ -40,7 +45,7 @@
     flex-flow: row;
     align-items: center;
     justify-content:center; 
-    background-color: rgb(238, 80, 52);  
+    background-color: #f63232;  
 }
 
 #welcome{
@@ -56,30 +61,25 @@
     flex-flow: column;
     /* align-items: center;
     justify-content:center;  */
-    background-color: rgb(239, 96, 71); 
+    background-color: #f63232; 
     padding: 20px;
-    background-color: gainsboro;
+    background-color:#f4f4f4;
 }
 
 a:link{
     text-decoration: none;
     color:black;
-    font-family: 'Poppins', sans-serif;
 }
 
 a:visited{
     color: red;
     text-decoration: none;
-   
-    font-family: 'Poppins', sans-serif;
 }
 
 
 a:active{
     color: red;
     text-decoration: none;
-    
-    font-family: 'Poppins', sans-serif;
 }
 
 .releaseText{
@@ -123,8 +123,52 @@ ul li img{
     width: 200px;
 }
 
-contact{
+section{
+    background-color: rgb(238, 238, 238);
+    padding: 70px;
+    text-align: center;
+
+}
+
+section h1{
+    font-size: 36px;
+    padding-bottom: 15px;
+}
+
+section form input {
+    margin: 10px 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 4px solid white;
+    border-radius: 28px;
+  }
+
+
+
+
+section form button {
+  
+    background-color: #f63232;
+    border: none;
+    border-radius: 50px;
     padding: 20px;
-    background-color: gainsboro;
+    width: 50%;
+    color: #f4f4f4;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+
+footer{
+    padding: 20px; 
+    background-color: #f63232;
+    text-align: center;
     
+}
+
+footer h3{
+       color: white;
+    
+
 }
