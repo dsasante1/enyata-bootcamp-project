@@ -22,7 +22,7 @@ body{
 .titleText{
     color:white;
     font-size: xx-large;
-    padding: 8px;
+    padding: 6px 12px;
     font-weight: bolder;  
 }
 
@@ -30,7 +30,7 @@ body{
 /* border around gamloft */
 
 #border{
-    margin: 20px;
+    margin: 10px;
     border: solid white;
     border-radius: 100px;
     border-width: 9px;
@@ -54,12 +54,18 @@ body{
     text-align: center; 
 }
 
+.welcomeBanner span{
+    color:#f4f4f4;
+}
+
 #welcome{
     font-size: large;
+    font-weight: bold;
 }
 
 #gameloft{
     font-size: x-large;
+    font-weight: bold;
 }
 
 .pageNav{
@@ -70,7 +76,11 @@ body{
     background-color:#f4f4f4;
 }
 
-.pageNav span #signup{
+.pageNav a{
+    color: #4b4b4b;
+}
+
+.pageNav #signup{
     color:#f63232;
 
 }
@@ -79,22 +89,25 @@ body{
 
 /* hyperlinks */
 
-
-a:link{
-    text-decoration: none;
-    color:black;
+#signup{
+    color: #f63232;
 }
 
-a:visited{
+.pageNav a:hover{
+    text-decoration: underline;
+}
+
+.pageNav a:link{
+    text-decoration: none;
+
+}
+
+.pageNav a:visited{
     color: red;
     text-decoration: none;
 }
 
 
-a:active{
-    color: red;
-    text-decoration: none;
-}
 
 
 
@@ -131,17 +144,7 @@ article p {
 
 .releasePosters{
     margin-bottom: 50px;
-}
-
-
-.releasePosters{
-  text-align: center;
-}
-
-
-/* set posters properties */
-ul li img{
-    width: 270px;
+    text-align: center;
 }
 
 
@@ -150,6 +153,11 @@ ul li{
     list-style-type: none
 }
 
+
+/* set posters properties */
+ul li img{
+    width: 270px;
+}
 
 
 /* contact section */
@@ -209,15 +217,17 @@ footer h3{
 /* set entire body to z index minus title 
 and nav  */
 
- .releaseText, article,ul, section, footer{
-    z-index: -1;
-}
 
 
- @media only screen and (min-width: 500px) {
+
+ @media only screen and (min-width: 600px) {
     *{
         margin: 0px;
         padding: 0px;
+    }
+
+    .releaseText, article,ul, section, footer{
+        z-index: auto;
     }
 
     .websiteTitle{
@@ -232,33 +242,37 @@ and nav  */
  
 
    .welcomeBanner{
-    width: 350px;  
+    width: 300px;  
     height: 200px;
     position:absolute;
     left: 0px;
-    top: 45%;
+    top: 15%;
     z-index: auto;
     
 }
 
-.welcomeBanner .textTitle span{
-    font: size 20px;
+.welcomeBanner span #welcome{
+    font: size 25%;
 }
 
 .pageNav{
     display: flex;
     flex-flow: row;
     justify-content: space-between;
-    background-color: #f63232; 
-    padding: 20px;
+    padding: 25px;
     background-color:#f4f4f4;
     position: sticky;
-    top:13%;
+    top: 7%;
 
 }
 
-.pageNav span a{
-    font-size: larger;
+.pageNav a{
+    color: #4b4b4b;
+    font-size: 25px;
+}
+
+.pageNav a:hover{
+    text-decoration: underline;
 }
 
 .releasePosters{
@@ -288,17 +302,20 @@ and nav  */
         height: 170px;
         position:absolute;
         left: 0px;
-        top: 30%;
+        top: 25%;
         z-index: auto;
         
     }
 
     .pageNav{
         position: sticky;
-        top:9%;
+        top:7%;
     
     }
-
+    #welcomeGameloft{
+        font-size: xx-large;
+        text-align: center;
+    }
     ul li img{
         margin: 10px;
         width: 200px;
@@ -329,14 +346,14 @@ and nav  */
         height: 170px;
         position:absolute;
         left: 0px;
-        top: 20%;
+        top: 25%;
         z-index: auto;
         
     }
 
     .pageNav{
         position: sticky;
-        top:40%;
+        top:7%;
     
     }
 
@@ -355,22 +372,45 @@ and nav  */
         height: 170px;
         position:absolute;
         left: 0px;
-        top: 40%;
-        z-index: auto;
+        top: 30%;
+        z-index: auto;   
         
     }
 
-    .welcome.textTitle span{
-        font-size: 40px;
+    .welcomeBanner #welcome{
+        font-size: larger;
     }
 
+  
     .pageNav{
         position: sticky;
-        top:20%;
+        top:7%;
     
     }
-    
 
+}
+
+@media only screen and (min-width: 1268px) {    
+        .welcomeBanner{
+            width: 300px;  
+            height: 170px;
+            position:absolute;
+            left: 0px;
+            top: 30%;
+            z-index: auto;   
+            
+        }
+    
+        .welcomeBanner #welcome{
+            font-size: larger;
+        }
+    
+      
+        .pageNav{
+            position: sticky;
+            top:7%;
+        
+        }
 
  } 
 
