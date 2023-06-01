@@ -312,10 +312,18 @@ and nav  */
         top:7%;
     
     }
-    #welcomeGameloft{
-        font-size: xx-large;
-        text-align: center;
+    
+
+    .welcomeBanner #welcome{
+        font-size: 40px;
     }
+
+    .welcomeBanner #gameloft{
+        font-size: 40px;
+    }
+
+
+
     ul li img{
         margin: 10px;
         width: 200px;
@@ -378,8 +386,13 @@ and nav  */
     }
 
     .welcomeBanner #welcome{
-        font-size: larger;
+        font-size: 40px;
     }
+
+    .welcomeBanner #gameloft{
+        font-size: 40px;
+    }
+
 
   
     .pageNav{
@@ -391,44 +404,23 @@ and nav  */
 }
 
 
-@media only screen and (min-width: 1268px) {    
-        .welcomeBanner{
-            width: 300px;  
-            height: 170px;
-            position:absolute;
-            left: 0px;
-            top: 30%;
-            z-index: auto;   
-            
-        }
-    
-        .welcomeBanner #welcome{
-            font-size: larger;
-        }
-    
-      
-        .pageNav{
-            position: sticky;
-            top:7%;
-        
-        }
-
- } 
-
-
  @media only screen and (min-width: 1268px) {    
     .welcomeBanner{
         width: 300px;  
         height: 170px;
         position:absolute;
         left: 0px;
-        top: 60%;
-        z-index: auto;   
+        top: 70%;
+        z-index: auto; 
         
     }
 
     .welcomeBanner #welcome{
-        font-size: larger;
+        font-size: 40px;
+    }
+
+    .welcomeBanner #gameloft{
+        font-size: 40px;
     }
 
   
